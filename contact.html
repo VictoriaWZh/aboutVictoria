@@ -1,0 +1,52 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact Form</title>
+  <style>
+      body {
+      background-color:aquamarine;
+      }
+
+      #test {
+          width: 200px;
+          height: 100px;
+          border-color:black;
+          border-radius: 10px;
+          margin-left: 200px;
+          display: none;
+      }
+
+      #ghost {
+          width:100px;
+          height:100px;
+      }
+  </style>
+
+  <script>
+      function showMyVoice() {
+          document.getElementById("test").style.display="block";
+      }
+  </script> 
+</head>
+<body>
+
+<form>
+  <label for="firstName">Full Name:</label>
+  <input type="text" id="firstName" name="firstName" required>
+  <br>
+ 
+  <label for="email">Email Address:</label>
+  <input type="email" id="email" name="email" required>
+  <br>
+ 
+  <label for="message">Message:</label>
+  <textarea id="message" name="message" required></textarea>
+  <br>
+ 
+  <button onclick="showMyVoice()">Submit</button>
+</form>
+    <div id="test">
+        <p>This is a paragraph inside of a container.</p>
+    </div>
+</body>
+</html>
