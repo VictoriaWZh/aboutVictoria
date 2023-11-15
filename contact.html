@@ -1,0 +1,85 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact Form</title>
+  <link rel="stylesheet" href="contact_externalStyle.css">
+  <script src="contact_Script.js"></script>
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link href='https://fonts.googleapis.com/css?family=Playfair Display' rel='stylesheet'>
+</head>
+
+<body>
+    <nav>   
+        <div class="navbar">
+            <ul>
+                <li><a href="index.html">INDEX</a></li>
+                <li><a href="classes.html">CLASSES</a></li>
+                <li><a href="interests.html">INTERESTS</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+                <li><a href="photoGallery.html">PHOTO GALLERY</a></li>
+            </ul>
+            </div>       
+    </nav>
+
+    <div class="headers">
+        <h1 style="font-size: 50px">CONTACT</h1>
+        <hr width = "6%">
+    </div>
+    <div class="genericText">
+        <h2>GENERAL CONTACT INFO</h2>
+        <table>
+            <tr>
+              <th>Email</th>
+              <th>Company</th>
+              <th>Phone</th>
+            </tr>
+            <tr>
+              <td>vzhang@eastsideprep.org</td>
+              <td>Eastside Preparatory School</td>
+              <td>425-753-3283</td>
+            </tr>
+          </table>
+    </div>
+    <br>
+
+    <h2>BUSINESS INQUIRY FORM</h2>
+    <p>Have a business inquiry? Contact me using the form below.</p>
+    <div id="temp">
+        <form>
+            <label for="firstName">Full Name: </label>
+            <input type="text" id="firstName" name="firstName" required>
+            <br>
+            <br>
+            
+            <label for="email">Email Address: </label>
+            <input type="email" id="email" name="email" required>
+            <br>
+            <br>
+            
+            <label for="message">Message: </label>
+            <textarea id="message" name="message" required></textarea>
+            <br>
+        </form>
+        <button class="button" onclick="showAlert()">Submit</button>
+    </div>
+
+    <div id="container">
+        <img src = "ty.png">
+        <p>Thanks for submitting! I hope to get in touch with you soon.</p>
+    </div>
+
+    <div class = "image">
+        <img src="contactImg.jpg" width='424' height="560">
+    </div>
+</body>
+
+<footer>
+        <div class = "footer">
+            <br>
+            <br>
+            <br>
+            <h6>© Copyright Victoria Zhang 2023</h6>
+        </div>
+</footer>
+
+</html>
